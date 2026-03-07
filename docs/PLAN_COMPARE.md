@@ -1,11 +1,18 @@
 # compare — Exhaustive Diff
 
-This document preserves the earlier feature-oriented framing of `compare`.
+## Decision status
 
-The repository's current implementation-direction plan is `docs/plan.md`. Where
-this file and `docs/plan.md` disagree, prefer `docs/plan.md` for repo
-structure, protocol boundaries, and the relationship between `compare`, `rvl`,
-and factory/tournament usage.
+Current decision: **do not pursue `compare` as a standalone spine primitive for
+now.**
+
+Exhaustive diff may still survive as an implementation capability or later audit
+surface, but this repo is not currently an active core-spine delivery target.
+
+The remainder of this document is preserved as historical feature framing.
+
+This document preserves the earlier feature-oriented framing of `compare`.
+`docs/plan.md` preserves the later protocol-oriented proposal. Both now serve as
+historical context for a deferred tool, not as active delivery plans.
 
 ## One-line promise
 **List every change between two datasets — every row, every field — without materiality compression or summarization.**

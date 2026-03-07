@@ -1,11 +1,29 @@
 # compare
 
-This is the implementation-direction plan for the repository.
+## Decision status
+
+Current decision: **do not pursue `compare` as a standalone spine primitive for
+now.**
+
+Exhaustive diff remains a useful implementation capability, but it does not
+currently justify its own first-class tool alongside `shape`, `verify`,
+`benchmark`, and `rvl`.
+
+Preferred future homes for that capability:
+
+- an internal substrate beneath `rvl`
+- a later `rvl --exhaustive` / audit mode
+- a later `pack diff --full`-style utility if a concrete evidence need emerges
+
+This document now serves as the superseded implementation proposal for a
+standalone `compare` tool. It is retained as historical design reference, not
+an active delivery plan.
 
 `docs/PLAN_COMPARE.md` captures the earlier feature-oriented framing inherited
-from the broader spine plan. Where the two documents differ, this file should
-govern repository structure, protocol boundaries, and the relationship to `rvl`
-and factory/tournament workflows.
+from the broader spine plan. Both documents are now historical context unless a
+future spine decision revives `compare` as a standalone utility.
+
+The remainder of this file records the superseded protocol-oriented proposal.
 
 ## Core definition
 
