@@ -1,5 +1,12 @@
 # compare — Exhaustive Diff
 
+This document preserves the earlier feature-oriented framing of `compare`.
+
+The repository's current implementation-direction plan is `docs/plan.md`. Where
+this file and `docs/plan.md` disagree, prefer `docs/plan.md` for repo
+structure, protocol boundaries, and the relationship between `compare`, `rvl`,
+and factory/tournament usage.
+
 ## One-line promise
 **List every change between two datasets — every row, every field — without materiality compression or summarization.**
 
